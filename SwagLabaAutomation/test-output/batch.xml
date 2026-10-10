@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CheckoutBatchSuite">
+  <test name="CheckoutBatchTest">
+    <classes>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Integration"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Functional"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_System"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Smoke"/>
+    </classes>
+  </test> <!-- CheckoutBatchTest -->
+</suite> <!-- CheckoutBatchSuite -->

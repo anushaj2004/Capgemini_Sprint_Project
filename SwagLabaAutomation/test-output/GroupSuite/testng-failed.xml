@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GroupSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GroupTest(failed)">
+    <groups>
+      <run>
+        <include name="functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Functional">
+        <methods>
+          <include name="tc_001"/>
+          <include name="tc_002"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- ecom.SwagLabs_Checkout.TC_Checkout_Functional -->
+      <class name="ecom.SwagLabs_Cart.TC_Cart_Negative">
+        <methods>
+          <include name="bc"/>
+          <include name="tc_002"/>
+        </methods>
+      </class> <!-- ecom.SwagLabs_Cart.TC_Cart_Negative -->
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Negative">
+        <methods>
+          <include name="tc_Negative1"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- ecom.SwagLabs_Checkout.TC_Checkout_Negative -->
+      <class name="ecom.SwagLabs_Cart.TC_Cart_Functional">
+        <methods>
+          <include name="tc_001"/>
+          <include name="bc"/>
+        </methods>
+      </class> <!-- ecom.SwagLabs_Cart.TC_Cart_Functional -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+</suite> <!-- Failed suite [GroupSuite] -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupSuite">
+  <test thread-count="5" name="GroupTest">
+  <groups>
+  <run>
+  <include name="integration"></include>
+  </run></groups>
+    <classes>
+      <class name="ecom.SwagLabs_Login.TC_Login_Functional"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Negative"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Integration"/>
+      <class name="ecom.SwagLabs_Login.TC_Login_Negative"/>
+      <class name="ecom.SwagLabs_Cart.TC_Cart_Functional"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Functional"/>
+      <class name="ecom.SwagLabs_Cart.TC_Cart_Integration"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_Smoke"/>
+      <class name="ecom.SwagLabs_Cart.TC_Cart_Negative"/>
+      <class name="ecom.SwagLabs_Checkout.TC_Checkout_System"/>
+      <class name="ecom.SwagLabs_Login.TC_Login_Integration"/>
+    </classes>
+  </test> <!-- GroupTest -->
+</suite> <!-- GroupSuite -->

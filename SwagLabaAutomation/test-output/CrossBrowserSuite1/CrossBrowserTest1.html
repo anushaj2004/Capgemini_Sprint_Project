@@ -1,0 +1,1203 @@
+<html>
+<head>
+<title>TestNG:  CrossBrowserTest1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CrossBrowserTest1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>54/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 10 10:42:51 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>801 seconds (801017 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifySuccessfulOrderPlacement()'><b>verifySuccessfulOrderPlacement</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-20497082" onClick='toggleBox("Output-20497082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20497082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20497082">
+Starting test: Verify successful order placement<br/>
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Clicking Finish to place the order<br/>
+Retrieving order confirmation message<br/>
+Thank you for your order!<br/>
+Verifying the order confirmation message<br/>
+PASS: Order placed successfully and confirmation message verified<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration.verifyRemovedProductIsNotTransferredToCheckout()'><b>verifyRemovedProductIsNotTransferredToCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-964380792" onClick='toggleBox("Output-964380792", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-964380792" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-964380792">
+Starting test: Verify removed product is not transferred to Checkout<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Verifying that two products are present in the Cart<br/>
+PASS: Two products are present in the Cart<br/>
+Removing the first product from the Cart<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Taking screenshot of Checkout Overview<br/>
+Verifying that only one product is present in Checkout Overview<br/>
+PASS: Removed product was not transferred to Checkout<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration@4ec4f3a0</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifyCancelButtonOnCheckoutOverview()'><b>verifyCancelButtonOnCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1657056576" onClick='toggleBox("Output-1657056576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1657056576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1657056576">
+Starting test: Verify Cancel button on Checkout Overview<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Verifying Checkout Overview page URL<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking Cancel on Checkout Overview<br/>
+Verifying navigation back to the Products page<br/>
+PASS: User returned to the Products page after clicking Cancel<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifySuccessfulOrderPlacement()'><b>verifySuccessfulOrderPlacement</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-207471579" onClick='toggleBox("Output-207471579", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-207471579" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-207471579">
+Starting test: Verify successful order placement<br/>
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Clicking Finish to place the order<br/>
+Retrieving order confirmation message<br/>
+Thank you for your order!<br/>
+Verifying the order confirmation message<br/>
+PASS: Order placed successfully and confirmation message verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Cart.TC_Cart_Functional.tc_001()'><b>tc_001</b><br>Test class: ecom.SwagLabs_Cart.TC_Cart_Functional<br/>
+<a href="#Output-194482321" onClick='toggleBox("Output-194482321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194482321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194482321">
+Verify that the added product is displayed in the cart with a quantity of 1.<br/>
+Step 1: Add one product to the cart.<br/>
+Step 2: Open the cart page and verify the product count.<br/>
+Test case passes:Product added to cart and verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Cart.TC_Cart_Functional@4550bb58</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifyCancelButtonOnCheckoutOverview()'><b>verifyCancelButtonOnCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-622318745" onClick='toggleBox("Output-622318745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-622318745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-622318745">
+Starting test: Verify Cancel button on Checkout Overview<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Verifying Checkout Overview page URL<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking Cancel on Checkout Overview<br/>
+Verifying navigation back to the Products page<br/>
+PASS: User returned to the Products page after clicking Cancel<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Login.TC_Login_Negative.tc_002()'><b>tc_002</b><br>Test class: ecom.SwagLabs_Login.TC_Login_Negative</td>
+<td></td>
+<td>8</td>
+<td>ecom.SwagLabs_Login.TC_Login_Negative@6adbc9d</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Cart.TC_Cart_Negative.tc_002()'><b>tc_002</b><br>Test class: ecom.SwagLabs_Cart.TC_Cart_Negative<br/>
+<a href="#Output-815905200" onClick='toggleBox("Output-815905200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-815905200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-815905200">
+Step 1: Add one product to the cart.<br/>
+Step 2: Navigate to the cart page and verify that one product is displayed.<br/>
+Step 3: Click the Remove button to remove the product from the cart.<br/>
+Step 4: Verify that the cart contains zero products after removal.<br/>
+Test Case Passed: Product was successfully removed from the cart, and the cart is now empty.<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>ecom.SwagLabs_Cart.TC_Cart_Negative@2b662a77</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration.verifyRemovedProductIsNotTransferredToCheckout()'><b>verifyRemovedProductIsNotTransferredToCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-941587342" onClick='toggleBox("Output-941587342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-941587342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-941587342">
+Starting test: Verify removed product is not transferred to Checkout<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Verifying that two products are present in the Cart<br/>
+PASS: Two products are present in the Cart<br/>
+Removing the first product from the Cart<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Taking screenshot of Checkout Overview<br/>
+Verifying that only one product is present in Checkout Overview<br/>
+PASS: Removed product was not transferred to Checkout<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration@4ec4f3a0</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.verifyCartProductMatchesCheckoutOverview()'><b>verifyCartProductMatchesCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1462928549" onClick='toggleBox("Output-1462928549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1462928549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1462928549">
+Selecting sorting option: Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Product added to Cart: Sauce Labs Onesie<br/>
+Clicking on the Checkout button<br/>
+Entering checkout details<br/>
+Product in Checkout Overview: Sauce Labs Onesie<br/>
+Verifying that the Cart product matches the Checkout Overview product<br/>
+PASS: Cart product matches Checkout Overview product: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifySuccessfulOrderPlacement()'><b>verifySuccessfulOrderPlacement</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-327197083" onClick='toggleBox("Output-327197083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-327197083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-327197083">
+Starting test: Verify successful order placement<br/>
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Clicking Finish to place the order<br/>
+Retrieving order confirmation message<br/>
+Thank you for your order!<br/>
+Verifying the order confirmation message<br/>
+PASS: Order placed successfully and confirmation message verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifyCancelButtonOnCheckoutOverview()'><b>verifyCancelButtonOnCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-1303329585" onClick='toggleBox("Output-1303329585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1303329585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1303329585">
+Starting test: Verify Cancel button on Checkout Overview<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Verifying Checkout Overview page URL<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking Cancel on Checkout Overview<br/>
+Verifying navigation back to the Products page<br/>
+PASS: User returned to the Products page after clicking Cancel<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Product.TC_Product_Functional.verifyProductDisplayedInCart()'><b>verifyProductDisplayedInCart</b><br>Test class: ecom.SwagLabs_Product.TC_Product_Functional<br/>
+<a href="#Output-1494144301" onClick='toggleBox("Output-1494144301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1494144301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1494144301">
+Step 1:Login to the application<br/>
+Step 2:Enter username and password<br/>
+Step 3:Navigate to the  product page<br/>
+Step 3:select on product name <br/>
+Step 4:store the product name and click add to cart on the inventry item page <br/>
+Step 4:Click on view cart<br/>
+veirfy that the selected product is correctly displayed in the cart page,true<br/>
+Test Case Passed: Selected product is correctly displayed in the cart <br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.SwagLabs_Product.TC_Product_Functional@223191a6</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutInformationPageElements()'><b>verifyCheckoutInformationPageElements</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br/>
+<a href="#Output-555754759" onClick='toggleBox("Output-555754759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-555754759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-555754759">
+Starting smoke test: Verify Checkout Information page and mandatory fields<br/>
+Sorting products by Price (low to high)<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Verifying Checkout Information page URL<br/>
+PASS: Checkout Information page is displayed<br/>
+Verifying First Name field,Last name field, Postal code field, Continue button, Cancel button is displayed<br/>
+PASS: Cancel button is displayed<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutOverviewAndCompleteOrder()'><b>verifyCheckoutOverviewAndCompleteOrder</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-2075455645" onClick='toggleBox("Output-2075455645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2075455645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2075455645">
+Starting smoke test: Verify Checkout Overview and complete the order<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Verifying Quantity,ProductPrice,PaymentInformation,ShippingInformation,ItemTotal,Tax,Total price,Finsih button,Cancel button is displayed<br/>
+Clicking Finish to complete the order<br/>
+Verifying order completion URL<br/>
+PASS: Order completed successfully<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Cart.TC_Cart_Integration.tc_003()'><b>tc_003</b><br>Test class: ecom.SwagLabs_Cart.TC_Cart_Integration<br/>
+<a href="#Output-1374355136" onClick='toggleBox("Output-1374355136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1374355136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1374355136">
+Verify that the selected product is correctly added to the cart.<br/>
+Step 1: Select a product and add it to the cart.<br/>
+Step 2: Open the cart page and verify that the selected product is displayed correctly.<br/>
+Test Case Passed: The selected product is correctly transferred to the cart.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.SwagLabs_Cart.TC_Cart_Integration@7f3b84b8</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.verifyCartProductMatchesCheckoutOverview()'><b>verifyCartProductMatchesCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-1424043852" onClick='toggleBox("Output-1424043852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1424043852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1424043852">
+Selecting sorting option: Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Product added to Cart: Sauce Labs Onesie<br/>
+Clicking on the Checkout button<br/>
+Entering checkout details<br/>
+Product in Checkout Overview: Sauce Labs Onesie<br/>
+Verifying that the Cart product matches the Checkout Overview product<br/>
+PASS: Cart product matches Checkout Overview product: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration.verifyRemovedProductIsNotTransferredToCheckout()'><b>verifyRemovedProductIsNotTransferredToCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-1294324247" onClick='toggleBox("Output-1294324247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1294324247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1294324247">
+Starting test: Verify removed product is not transferred to Checkout<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Verifying that two products are present in the Cart<br/>
+PASS: Two products are present in the Cart<br/>
+Removing the first product from the Cart<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Taking screenshot of Checkout Overview<br/>
+Verifying that only one product is present in Checkout Overview<br/>
+PASS: Removed product was not transferred to Checkout<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration@4ec4f3a0</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutOverviewAndCompleteOrder()'><b>verifyCheckoutOverviewAndCompleteOrder</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-502661440" onClick='toggleBox("Output-502661440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502661440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502661440">
+Starting smoke test: Verify Checkout Overview and complete the order<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Verifying Quantity,ProductPrice,PaymentInformation,ShippingInformation,ItemTotal,Tax,Total price,Finsih button,Cancel button is displayed<br/>
+Clicking Finish to complete the order<br/>
+Verifying order completion URL<br/>
+PASS: Order completed successfully<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyBrowserBackFromCheckoutOverview()'><b>verifyBrowserBackFromCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-1496217368" onClick='toggleBox("Output-1496217368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1496217368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1496217368">
+Starting test: Verify Browser Back navigation from Checkout Overview<br/>
+Adding first product to the cart<br/>
+Adding second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout Details<br/>
+Clicking Continue to proceed to Checkout Overview<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking browser Back button<br/>
+Verifying navigation back to Checkout Information page<br/>
+PASS: Checkout Information page is displayed after Browser Back<br/>
+Taking screenshot after browser Back navigation<br/>
+Test completed: Browser Back navigation verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.tverifyMultipleProductsTransferredToCheckoutOverview()'><b>tverifyMultipleProductsTransferredToCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-1545308588" onClick='toggleBox("Output-1545308588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1545308588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1545308588">
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Second product in Cart: Sauce Labs Bolt T-Shirt<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Second product in Checkout Overview: Sauce Labs Bolt T-Shirt<br/>
+Verifying the second product in Cart and Checkout Overview<br/>
+PASS: Second product is transferred correctly: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.verifyCartProductMatchesCheckoutOverview()'><b>verifyCartProductMatchesCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-1078834804" onClick='toggleBox("Output-1078834804", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1078834804" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1078834804">
+Selecting sorting option: Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Product added to Cart: Sauce Labs Onesie<br/>
+Clicking on the Checkout button<br/>
+Entering checkout details<br/>
+Product in Checkout Overview: Sauce Labs Onesie<br/>
+Verifying that the Cart product matches the Checkout Overview product<br/>
+PASS: Cart product matches Checkout Overview product: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.tc_NegverifyCheckoutErrorWhenFirstNameIsBlankative1()'><b>tc_NegverifyCheckoutErrorWhenFirstNameIsBlankative1</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br/>
+<a href="#Output-979290978" onClick='toggleBox("Output-979290978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-979290978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-979290978">
+Starting negative test: First Name field left blank<br/>
+Sorting products by Price (low to high)<br/>
+Adding a product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Opening Excel file to retrieve test data<br/>
+Leaving First Name field blank<br/>
+Entering Last Name<br/>
+Entering Postal Code<br/>
+Clicking Continue without entering First Name<br/>
+Taking screenshot of the First Name validation error<br/>
+Actual error message: Error: First Name is required<br/>
+Verifying the expected First Name validation message<br/>
+PASS: First Name required validation message displayed correctly<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyProductCheckout()'><b>verifyProductCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-22864481" onClick='toggleBox("Output-22864481", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22864481" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22864481">
+Step 1:Naviagte to Product page and Sort products<br/>
+Step 2:Store the selected product name and add to cart<br/>
+Step 3:Navigate to home page and click on view cart<br/>
+Step 4:Navigate to Cart page and click on Checkout button<br/>
+Step 5:Enter the firstname, lastname and postalcode<br/>
+Step 6:Navigate to Checkout overview page and store the product item name <br/>
+Step 7:verify the selected product from product to the actual product in checkout overview<br/>
+Test Case Passed: verified the product on checkout page matchesSauce Labs Onesie:Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyBrowserBackFromCheckoutOverview()'><b>verifyBrowserBackFromCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-1709234654" onClick='toggleBox("Output-1709234654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1709234654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1709234654">
+Starting test: Verify Browser Back navigation from Checkout Overview<br/>
+Adding first product to the cart<br/>
+Adding second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout Details<br/>
+Clicking Continue to proceed to Checkout Overview<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking browser Back button<br/>
+Verifying navigation back to Checkout Information page<br/>
+PASS: Checkout Information page is displayed after Browser Back<br/>
+Taking screenshot after browser Back navigation<br/>
+Test completed: Browser Back navigation verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyProductCheckout()'><b>verifyProductCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-1086342015" onClick='toggleBox("Output-1086342015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1086342015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1086342015">
+Step 1:Naviagte to Product page and Sort products<br/>
+Step 2:Store the selected product name and add to cart<br/>
+Step 3:Navigate to home page and click on view cart<br/>
+Step 4:Navigate to Cart page and click on Checkout button<br/>
+Step 5:Enter the firstname, lastname and postalcode<br/>
+Step 6:Navigate to Checkout overview page and store the product item name <br/>
+Step 7:verify the selected product from product to the actual product in checkout overview<br/>
+Test Case Passed: verified the product on checkout page matchesSauce Labs Onesie:Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.verifyCartProductMatchesCheckoutOverview()'><b>verifyCartProductMatchesCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-2076165631" onClick='toggleBox("Output-2076165631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076165631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076165631">
+Selecting sorting option: Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Product added to Cart: Sauce Labs Onesie<br/>
+Clicking on the Checkout button<br/>
+Entering checkout details<br/>
+Product in Checkout Overview: Sauce Labs Onesie<br/>
+Verifying that the Cart product matches the Checkout Overview product<br/>
+PASS: Cart product matches Checkout Overview product: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifyCancelButtonOnCheckoutOverview()'><b>verifyCancelButtonOnCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-1122673705" onClick='toggleBox("Output-1122673705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1122673705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1122673705">
+Starting test: Verify Cancel button on Checkout Overview<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Verifying Checkout Overview page URL<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking Cancel on Checkout Overview<br/>
+Verifying navigation back to the Products page<br/>
+PASS: User returned to the Products page after clicking Cancel<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutOverviewAndCompleteOrder()'><b>verifyCheckoutOverviewAndCompleteOrder</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-564971626" onClick='toggleBox("Output-564971626", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-564971626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-564971626">
+Starting smoke test: Verify Checkout Overview and complete the order<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Verifying Quantity,ProductPrice,PaymentInformation,ShippingInformation,ItemTotal,Tax,Total price,Finsih button,Cancel button is displayed<br/>
+Clicking Finish to complete the order<br/>
+Verifying order completion URL<br/>
+PASS: Order completed successfully<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.tverifyMultipleProductsTransferredToCheckoutOverview()'><b>tverifyMultipleProductsTransferredToCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-706139356" onClick='toggleBox("Output-706139356", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-706139356" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-706139356">
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Second product in Cart: Sauce Labs Bolt T-Shirt<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Second product in Checkout Overview: Sauce Labs Bolt T-Shirt<br/>
+Verifying the second product in Cart and Checkout Overview<br/>
+PASS: Second product is transferred correctly: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifySuccessfulOrderPlacement()'><b>verifySuccessfulOrderPlacement</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1321358217" onClick='toggleBox("Output-1321358217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1321358217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321358217">
+Starting test: Verify successful order placement<br/>
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Clicking Finish to place the order<br/>
+Retrieving order confirmation message<br/>
+Thank you for your order!<br/>
+Verifying the order confirmation message<br/>
+PASS: Order placed successfully and confirmation message verified<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Cart.TC_Cart_Negative.tc_004()'><b>tc_004</b><br>Test class: ecom.SwagLabs_Cart.TC_Cart_Negative<br/>
+<a href="#Output-616838922" onClick='toggleBox("Output-616838922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-616838922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-616838922">
+Step 1: Navigate to the cart page without adding any product.<br/>
+Step 2: Verify that the cart is empty and displays zero products.<br/>
+Test Case Passed: Cart is empty and displays zero products.<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>ecom.SwagLabs_Cart.TC_Cart_Negative@2b662a77</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyProductCheckout()'><b>verifyProductCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-1192555591" onClick='toggleBox("Output-1192555591", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1192555591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1192555591">
+Step 1:Naviagte to Product page and Sort products<br/>
+Step 2:Store the selected product name and add to cart<br/>
+Step 3:Navigate to home page and click on view cart<br/>
+Step 4:Navigate to Cart page and click on Checkout button<br/>
+Step 5:Enter the firstname, lastname and postalcode<br/>
+Step 6:Navigate to Checkout overview page and store the product item name <br/>
+Step 7:verify the selected product from product to the actual product in checkout overview<br/>
+Test Case Passed: verified the product on checkout page matchesSauce Labs Onesie:Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.tverifyMultipleProductsTransferredToCheckoutOverview()'><b>tverifyMultipleProductsTransferredToCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1946815838" onClick='toggleBox("Output-1946815838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1946815838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1946815838">
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Second product in Cart: Sauce Labs Bolt T-Shirt<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Second product in Checkout Overview: Sauce Labs Bolt T-Shirt<br/>
+Verifying the second product in Cart and Checkout Overview<br/>
+PASS: Second product is transferred correctly: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyCheckoutPage()'><b>verifyCheckoutPage</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br/>
+<a href="#Output-265722243" onClick='toggleBox("Output-265722243", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-265722243" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-265722243">
+Step 1:Navigate & sort Products<br/>
+Step 2:Add First product to Cart<br/>
+Navigate to Home Page<br/>
+Step 2: navigate to Cart Page and verify product Name in Cart<br/>
+Step 3:Verified product in cart is :Sauce Labs Onesie<br/>
+Step 4:Navigate to Checkout page by clicking checkout button and verify that checkout page is displayed<br/>
+Test Case Passed: verified Checkout page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Product.TC_Product_Functional.tc_verifyProductPageDisplayed()'><b>tc_verifyProductPageDisplayed</b><br>Test class: ecom.SwagLabs_Product.TC_Product_Functional<br/>
+<a href="#Output-1593829543" onClick='toggleBox("Output-1593829543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1593829543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1593829543">
+Step 1:Login to the application<br/>
+Step 2:Enter username and password<br/>
+Step 3:Navigate to the  product page<br/>
+Test Case Passed: Product page was successfully displayed,true<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ecom.SwagLabs_Product.TC_Product_Functional@223191a6</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifyCancelButtonOnCheckoutOverview()'><b>verifyCancelButtonOnCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-1571718647" onClick='toggleBox("Output-1571718647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1571718647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1571718647">
+Starting test: Verify Cancel button on Checkout Overview<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Verifying Checkout Overview page URL<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking Cancel on Checkout Overview<br/>
+Verifying navigation back to the Products page<br/>
+PASS: User returned to the Products page after clicking Cancel<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.tverifyMultipleProductsTransferredToCheckoutOverview()'><b>tverifyMultipleProductsTransferredToCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-45515497" onClick='toggleBox("Output-45515497", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45515497" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45515497">
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Second product in Cart: Sauce Labs Bolt T-Shirt<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Second product in Checkout Overview: Sauce Labs Bolt T-Shirt<br/>
+Verifying the second product in Cart and Checkout Overview<br/>
+PASS: Second product is transferred correctly: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutOverviewAndCompleteOrder()'><b>verifyCheckoutOverviewAndCompleteOrder</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-596453359" onClick='toggleBox("Output-596453359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-596453359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-596453359">
+Starting smoke test: Verify Checkout Overview and complete the order<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Verifying Quantity,ProductPrice,PaymentInformation,ShippingInformation,ItemTotal,Tax,Total price,Finsih button,Cancel button is displayed<br/>
+Clicking Finish to complete the order<br/>
+Verifying order completion URL<br/>
+PASS: Order completed successfully<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyCheckoutErrorWhenAllFieldsAreBlank()'><b>verifyCheckoutErrorWhenAllFieldsAreBlank</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br/>
+<a href="#Output-865867007" onClick='toggleBox("Output-865867007", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-865867007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-865867007">
+Starting negative test: All checkout fields left blank<br/>
+Adding a product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Leaving all checkout fields blank<br/>
+Clicking Continue without entering any details<br/>
+Taking screenshot of the validation error<br/>
+Actual validation error: Error: First Name is required<br/>
+Verifying that the validation error is displayed<br/>
+PASS: Validation error is displayed<br/>
+Verifying the user remains on Checkout Information page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_System.verifySuccessfulOrderPlacement()'><b>verifySuccessfulOrderPlacement</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_System<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-882678778" onClick='toggleBox("Output-882678778", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-882678778" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-882678778">
+Starting test: Verify successful order placement<br/>
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout details<br/>
+Clicking Finish to place the order<br/>
+Retrieving order confirmation message<br/>
+Thank you for your order!<br/>
+Verifying the order confirmation message<br/>
+PASS: Order placed successfully and confirmation message verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_System@7f0eb4b4</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyBrowserBackFromCheckoutOverview()'><b>verifyBrowserBackFromCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-2022210542" onClick='toggleBox("Output-2022210542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2022210542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2022210542">
+Starting test: Verify Browser Back navigation from Checkout Overview<br/>
+Adding first product to the cart<br/>
+Adding second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout Details<br/>
+Clicking Continue to proceed to Checkout Overview<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking browser Back button<br/>
+Verifying navigation back to Checkout Information page<br/>
+PASS: Checkout Information page is displayed after Browser Back<br/>
+Taking screenshot after browser Back navigation<br/>
+Test completed: Browser Back navigation verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration.verifyRemovedProductIsNotTransferredToCheckout()'><b>verifyRemovedProductIsNotTransferredToCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration<br>Parameters: radha, kumari, 543210<br/>
+<a href="#Output-1099145839" onClick='toggleBox("Output-1099145839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1099145839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1099145839">
+Starting test: Verify removed product is not transferred to Checkout<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Verifying that two products are present in the Cart<br/>
+PASS: Two products are present in the Cart<br/>
+Removing the first product from the Cart<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Taking screenshot of Checkout Overview<br/>
+Verifying that only one product is present in Checkout Overview<br/>
+PASS: Removed product was not transferred to Checkout<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration@4ec4f3a0</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyBrowserBackFromCheckoutOverview()'><b>verifyBrowserBackFromCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-188917296" onClick='toggleBox("Output-188917296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-188917296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-188917296">
+Starting test: Verify Browser Back navigation from Checkout Overview<br/>
+Adding first product to the cart<br/>
+Adding second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout Details<br/>
+Clicking Continue to proceed to Checkout Overview<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking browser Back button<br/>
+Verifying navigation back to Checkout Information page<br/>
+PASS: Checkout Information page is displayed after Browser Back<br/>
+Taking screenshot after browser Back navigation<br/>
+Test completed: Browser Back navigation verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyProductCheckout()'><b>verifyProductCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br>Parameters: guru, madav, 654313<br/>
+<a href="#Output-354230638" onClick='toggleBox("Output-354230638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-354230638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-354230638">
+Step 1:Naviagte to Product page and Sort products<br/>
+Step 2:Store the selected product name and add to cart<br/>
+Step 3:Navigate to home page and click on view cart<br/>
+Step 4:Navigate to Cart page and click on Checkout button<br/>
+Step 5:Enter the firstname, lastname and postalcode<br/>
+Step 6:Navigate to Checkout overview page and store the product item name <br/>
+Step 7:verify the selected product from product to the actual product in checkout overview<br/>
+Test Case Passed: verified the product on checkout page matchesSauce Labs Onesie:Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Smoke.verifyCheckoutOverviewAndCompleteOrder()'><b>verifyCheckoutOverviewAndCompleteOrder</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Smoke<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-143661029" onClick='toggleBox("Output-143661029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-143661029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-143661029">
+Starting smoke test: Verify Checkout Overview and complete the order<br/>
+Sorting products by Price (low to high)<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Verifying Quantity,ProductPrice,PaymentInformation,ShippingInformation,ItemTotal,Tax,Total price,Finsih button,Cancel button is displayed<br/>
+Clicking Finish to complete the order<br/>
+Verifying order completion URL<br/>
+PASS: Order completed successfully<br/>
+Smoke test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Smoke@57a3af25</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Login.TC_Login_Functional.tc_001()'><b>tc_001</b><br>Test class: ecom.SwagLabs_Login.TC_Login_Functional<br/>
+<a href="#Output-1250623474" onClick='toggleBox("Output-1250623474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1250623474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1250623474">
+Step 1: Read the username and password from the property file.<br/>
+Step 2: Enter the username and password and log in to the application.<br/>
+Step 3: Verify that the user has logged in successfully.<br/>
+Step 4: Log out of the application.<br/>
+Test Case Passed: Login using credentials from the property file and logout completed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ecom.SwagLabs_Login.TC_Login_Functional@1623b78d</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Login.TC_Login_Negative.tc_004()'><b>tc_004</b><br>Test class: ecom.SwagLabs_Login.TC_Login_Negative<br/>
+<a href="#Output-2053958677" onClick='toggleBox("Output-2053958677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2053958677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2053958677">
+Entering a valid username and invalid password.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Login.TC_Login_Negative@6adbc9d</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.verifyCartProductMatchesCheckoutOverview()'><b>verifyCartProductMatchesCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: krishna, k, 583101<br/>
+<a href="#Output-1891974590" onClick='toggleBox("Output-1891974590", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1891974590" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1891974590">
+Selecting sorting option: Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Navigating to the Cart page<br/>
+Product added to Cart: Sauce Labs Onesie<br/>
+Clicking on the Checkout button<br/>
+Entering checkout details<br/>
+Product in Checkout Overview: Sauce Labs Onesie<br/>
+Verifying that the Cart product matches the Checkout Overview product<br/>
+PASS: Cart product matches Checkout Overview product: Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Integration.tverifyMultipleProductsTransferredToCheckoutOverview()'><b>tverifyMultipleProductsTransferredToCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Integration<br>Parameters: sriradha, rani, 534212<br/>
+<a href="#Output-1887979637" onClick='toggleBox("Output-1887979637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887979637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887979637">
+Sorting products by Price (low to high)<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Adding the third product to the cart<br/>
+Navigating to the Cart page<br/>
+Second product in Cart: Sauce Labs Bolt T-Shirt<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Second product in Checkout Overview: Sauce Labs Bolt T-Shirt<br/>
+Verifying the second product in Cart and Checkout Overview<br/>
+PASS: Second product is transferred correctly: Sauce Labs Bolt T-Shirt<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Integration@9f116cc</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Negative.verifyBrowserBackFromCheckoutOverview()'><b>verifyBrowserBackFromCheckoutOverview</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Negative<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-273022523" onClick='toggleBox("Output-273022523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273022523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273022523">
+Starting test: Verify Browser Back navigation from Checkout Overview<br/>
+Adding first product to the cart<br/>
+Adding second product to the cart<br/>
+Navigating to the Cart page<br/>
+Clicking the Checkout button<br/>
+Entering Checkout Details<br/>
+Clicking Continue to proceed to Checkout Overview<br/>
+Verifying Checkout Overview page is displayed<br/>
+PASS: Checkout Overview page is displayed<br/>
+Clicking browser Back button<br/>
+Verifying navigation back to Checkout Information page<br/>
+PASS: Checkout Information page is displayed after Browser Back<br/>
+Taking screenshot after browser Back navigation<br/>
+Test completed: Browser Back navigation verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Negative@c8c12ac</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Login.TC_Login_Integration.tc_003()'><b>tc_003</b><br>Test class: ecom.SwagLabs_Login.TC_Login_Integration<br/>
+<a href="#Output-401184791" onClick='toggleBox("Output-401184791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-401184791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-401184791">
+Step 1: Read the username and password from the property file.<br/>
+Step 2: Enter the credentials and log in to the application.<br/>
+Step 3: Verify that the user is logged in successfully and the product page is displayed.<br/>
+Test Case Passed: User logged in successfully and the product page is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Login.TC_Login_Integration@5c33f1a9</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_Functional.verifyProductCheckout()'><b>verifyProductCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_Functional<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1469189484" onClick='toggleBox("Output-1469189484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1469189484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1469189484">
+Step 1:Naviagte to Product page and Sort products<br/>
+Step 2:Store the selected product name and add to cart<br/>
+Step 3:Navigate to home page and click on view cart<br/>
+Step 4:Navigate to Cart page and click on Checkout button<br/>
+Step 5:Enter the firstname, lastname and postalcode<br/>
+Step 6:Navigate to Checkout overview page and store the product item name <br/>
+Step 7:verify the selected product from product to the actual product in checkout overview<br/>
+Test Case Passed: verified the product on checkout page matchesSauce Labs Onesie:Sauce Labs Onesie<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_Functional@77847718</td></tr>
+<tr>
+<td title='ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration.verifyRemovedProductIsNotTransferredToCheckout()'><b>verifyRemovedProductIsNotTransferredToCheckout</b><br>Test class: ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration<br>Parameters: anusha, j, 560001<br/>
+<a href="#Output-1529386967" onClick='toggleBox("Output-1529386967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529386967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529386967">
+Starting test: Verify removed product is not transferred to Checkout<br/>
+Adding the first product to the cart<br/>
+Adding the second product to the cart<br/>
+Navigating to the Cart page<br/>
+Verifying that two products are present in the Cart<br/>
+PASS: Two products are present in the Cart<br/>
+Removing the first product from the Cart<br/>
+Clicking the Checkout button<br/>
+Entering checkout details<br/>
+Taking screenshot of Checkout Overview<br/>
+Verifying that only one product is present in Checkout Overview<br/>
+PASS: Removed product was not transferred to Checkout<br/>
+Test completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecom.SwagLabs_Checkout.TC_Checkout_NegativeIntegration@4ec4f3a0</td></tr>
+</table><p>
+</body>
+</html>
